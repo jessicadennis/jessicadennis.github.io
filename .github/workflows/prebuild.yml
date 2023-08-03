@@ -12,5 +12,7 @@ jobs:
       - run: |
           npm ci
           npm run build
+          git config user.email "jessicadennis@gmail.com"
+          git config user.name "Jessica Dennis"
           git commit -am "Automated report"
           git push
