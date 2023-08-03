@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/main.css --watch",
-    "build": "npx tailwindcss -o ./assets/main.css --minify"
+    "build": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/main.css --minify"
   },
   "devDependencies": {
     "postcss-import": "^15.1.0",
