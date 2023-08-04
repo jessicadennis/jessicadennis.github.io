@@ -37,6 +37,6 @@ jobs:
           --data '{
             "context": "Staging Tests",
             "state": "success",
-            "description": "Staging tests passed",
+            "description": "Build CSS passed",
             "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           }'
