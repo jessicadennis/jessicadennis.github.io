@@ -1,5 +1,7 @@
 name: Build Tailwind Minified CSS
 on: [pull_request]
+env:
+  GH_TOKEN: ${{ github.token }}
 
 jobs:
   prebuild:
