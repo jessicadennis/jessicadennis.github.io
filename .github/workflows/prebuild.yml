@@ -22,8 +22,7 @@ jobs:
           git commit -am "Generated minified CSS"
           git push
   set-success:
-    needs: [build-css]
-    if: ${{ success() }}
+    needs: build-css
     runs-on: ubuntu-latest
     steps:
       # set the merge commit status check
