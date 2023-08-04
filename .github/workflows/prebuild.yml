@@ -16,8 +16,10 @@ jobs:
       - run: |
           npm ci
           npm run build
+      - run: |
           git add -A
           git config user.email "jessicadennis@gmail.com"
           git config user.name "Jessica Dennis"
-          git commit -am "Automated report"
+          git commit -am "Minified CSS"
           git push
+      - run: gh run view ${{ github.run_id }} --exit-status && echo "run has not failed"
