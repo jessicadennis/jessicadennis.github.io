@@ -29,4 +29,4 @@ jobs:
           git config user.name "Jessica Dennis"
           git commit -am "Minified CSS"
           git push
-      - run: gh run exit 0
+      - run: exit 0
