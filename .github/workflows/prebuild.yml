@@ -3,6 +3,7 @@ on: [pull_request]
 
 jobs:
   build-css:
+    name: "build-css"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
