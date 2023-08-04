@@ -6,7 +6,10 @@ env:
 jobs:
   prebuild:
     permissions:
-      actions: "write"
+      actions: write
+      contents: write
+      checks: write
+      deployments: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
