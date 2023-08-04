@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   h1 {
     @apply font-sans text-4xl font-bold text-teal-700;
