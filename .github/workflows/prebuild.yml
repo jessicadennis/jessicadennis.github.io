@@ -2,7 +2,8 @@ name: Build Tailwind Minified CSS
 on: [pull_request]
 
 jobs:
-  prebuild:
+  build-css:
+    name: "build-css"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -19,5 +20,5 @@ jobs:
           git add -A
           git config user.email "jessicadennis@gmail.com"
           git config user.name "Jessica Dennis"
-          git commit -am "Automated report"
+          git commit -am "Generated minified CSS"
           git push
