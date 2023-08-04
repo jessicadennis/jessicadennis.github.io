@@ -21,3 +21,5 @@ jobs:
           git config user.name "Jessica Dennis"
           git commit -am "Automated report"
           git push
+      - run:
+          exit 0
