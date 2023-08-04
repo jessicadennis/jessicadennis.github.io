@@ -9,9 +9,9 @@
       <div
         class="mb-6 flex basis-full items-end justify-between border-b-4 border-teal-700 pb-3">
         <h1>Jessica Dennis</h1>
-        <div class="flex items-start font-sans">
+        <div class="flex items-start font-sans md:flex-col md:items-end">
           <a
-            class="border-r border-teal-700 px-2"
+            class="border-r border-teal-700 px-2 md:border-0 md:px-0"
             href="mailto:jmdennis@proton.me">
             jmdennis@proton.me
           </a>
@@ -34,7 +34,9 @@
       </p>
       <h2>Experience</h2>
       <h3>
-        Team Lead / Staff Software Engineer, Picnic Corp. — 2020&ndash;Present
+        <span>Team Lead / Staff Software Engineer, Picnic Corp.</span>
+        <span class="md:hidden"> — </span>
+        <span>2020&ndash;Present</span>
       </h3>
       <p>
         Lead squad of full-stack engineers in building Angular / Java
@@ -44,33 +46,40 @@
         Mentor junior engineers. Lead feature projects and manage JIRA user
         stories and tasks.
       </p>
-      <h3>Senior UI Engineer, Sophos — 2019&ndash;2020</h3>
+      <span>Senior UI Engineer, Sophos</span> <span class="md:hidden"> — </span> <span>2019&ndash;2020</span></h3>
       <p>
         Implement features and squash bugs for enterprise security software with
         JavaScript & TypeScript; migrate AngularJS to Angular. Mentor junior
         engineers.
       </p>
-      <h3>Senior Software Developer, UL — 2015&ndash;2019</h3>
+      <span>Senior Software Developer, UL</span> <span class="md:hidden"> — </span> <span>2015&ndash;2019</span></h3>
       <p>
         Develop features for large-scale B2B applications using JavaScript
         (Knockout, jQuery), TypeScript, HTML, SCSS, XSLT, C#/Razor and MS SQL.
       </p>
-      <h3>Web Manager, Georgia State University — 2012&ndash;2015</h3>
+      <h3>
+        <span>Web Manager, Georgia State University</span>
+        <span class="md:hidden"> <span class="md:hidden"> — </span> </span> <span>2012&ndash;2015</span>
+      </h3>
       <p>
         Migrate Robinson College of Business websites to WordPress, including
         site architecture; SCSS; plugin development; Google Analytics / SEO.
         Mentor junior and graduate student developers. Some graphic design.
       </p>
-      <h3>Webmaster & Lead CMS Analyst, UC Riverside — 2007&ndash;2012</h3>
+      <h3>
+        <span>Webmaster & Lead CMS Analyst, UC Riverside</span>
+        <span class="md:hidden"> <span class="md:hidden"> — </span> </span>
+        <span>2007&ndash;2012</span>
+      </h3>
       <p>
         Manage deployment & ongoing support for campus-wide content management
         system; build HTML and PHP websites; CSS; user documentation; user
         training. Mentor student employees and junior developers.
       </p>
       <h3>Education</h3>
-      <ul>
-        <li>Boston University — MS, Information Systems</li>
-        <li>Scripps College — BA, English</li>
+      <ul class="md:text-lg">
+        <li>Boston University <span class="md:hidden"> — </span> MS, Computer Information Systems</li>
+        <li>Scripps College <span class="md:hidden"> — </span> BA, English</li>
       </ul>
     </div>
   </body>
