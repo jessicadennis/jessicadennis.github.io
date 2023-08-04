@@ -4,32 +4,58 @@
 
 @layer base {
   h1 {
-    @apply font-sans text-3xl font-bold text-teal-700;
+    @apply font-sans text-4xl font-bold text-teal-700;
   }
 
   h2 {
-    @apply mb-1 font-sans text-xl font-semibold uppercase text-teal-700;
+    @apply mb-1 font-sans text-2xl font-semibold uppercase text-teal-700;
   }
 
   h3 {
-    @apply mb-1 flex font-sans text-lg font-semibold text-teal-600;
+    @apply mb-0 flex flex-col font-sans text-xl font-semibold text-teal-600;
+  }
+
+  h3 span:last-child {
+    @apply mb-1;
   }
 
   p {
-    @apply mb-2;
+    @apply text-lg;
   }
 
-  @media screen(md) {
+  @media screen(lg) {
     h1 {
-      @apply text-4xl;
+      @apply text-3xl;
     }
 
     h2 {
-      @apply text-2xl;
+      @apply text-xl;
     }
 
     h3 {
-      @apply mb-0 flex-col text-xl;
+      @apply mb-1 flex-row text-lg;
+    }
+
+    p {
+      @apply mb-2 text-base;
+    }
+  }
+
+  @media screen(xs) {
+    body {
+      @apply p-3;
+    }
+
+    h1 {
+      @apply text-3xl;
+    }
+
+    h2 {
+      @apply text-xl;
+    }
+
+    h3 {
+      @apply mb-0 flex-col text-lg;
     }
 
     h3 span:last-child {
@@ -37,7 +63,7 @@
     }
 
     p {
-      @apply text-lg;
+      @apply text-base;
     }
   }
 }
