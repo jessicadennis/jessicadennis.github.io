@@ -20,7 +20,7 @@
   }
 
   p {
-    @apply text-lg;
+    @apply mb-2 text-lg;
   }
 
   @media screen(lg) {
@@ -37,7 +37,7 @@
     }
 
     p {
-      @apply mb-2 text-base;
+      @apply text-base;
     }
   }
 
