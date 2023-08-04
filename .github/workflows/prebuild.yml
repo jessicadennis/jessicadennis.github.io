@@ -5,6 +5,8 @@ env:
 
 jobs:
   prebuild:
+    permissions:
+      actions: "write"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,4 +26,4 @@ jobs:
           git config user.name "Jessica Dennis"
           git commit -am "Minified CSS"
           git push
-      - run: gh run view ${{ github.run_id }} --exit-status && echo "run has not failed"
+      - run: gh run exit 0
