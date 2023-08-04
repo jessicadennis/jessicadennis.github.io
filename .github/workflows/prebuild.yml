@@ -22,4 +22,7 @@ jobs:
           git config user.name "Jessica Dennis"
           git commit -am "Generated minified CSS"
           git push
-      - run: exit 0
+      - name: "report success"
+        if: ${{ success() }}
+        run: |
+          echo "Success"
