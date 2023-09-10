@@ -1,5 +1,9 @@
-@import '@fortawesome/fontawesome-free/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon {
+	font-family: 'Noto Emoji', sans-serif;
+}
