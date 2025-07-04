@@ -2,6 +2,7 @@
 
 @theme {
   --breakpoint-xs: 20rem;
+  --text-2xs: 0.625rem;
 }
 
 html {
@@ -25,7 +26,15 @@ h3 span:last-child {
 }
 
 p {
-  @apply mb-4 text-base lg:mb-6 lg:text-lg print:text-sm;
+  @apply mb-4 text-base lg:mb-6 lg:text-lg print:mb-2 print:text-sm;
+}
+
+p.skills {
+  @apply print:text-2xs;
+}
+
+h2.skills {
+  @apply print:text-base;
 }
 
 ul li {
